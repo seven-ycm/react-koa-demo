@@ -1,6 +1,8 @@
 {
+  "compileOnSave": true,
   "compilerOptions": {
-    "target": "es5",
+    "experimentalDecorators": true,
+    "target": "es2017",
     "lib": [
       "dom",
       "dom.iterable",
@@ -18,9 +20,26 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "noImplicitAny": false,
+    "emitDecoratorMetadata": true,
+    "charset": "utf8",
+    "pretty": true,
+    "jsx": "react-jsx",
+    "noEmitOnError": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "strictPropertyInitialization": false,
+    "skipDefaultLibCheck": true,
+    "sourceMap": true,
+    "importHelpers": true
   },
   "include": [
     "src"
+  ],
+  "exclude": [
+    "node_modules*",
+    "scripts"
   ]
 }

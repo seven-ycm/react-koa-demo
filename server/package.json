@@ -23,6 +23,8 @@
   "homepage": "https://github.com/seven-ycm/react-koa-demo#readme",
   "dependencies": {
     "koa": "^2.13.4",
-    "koa-router": "^10.1.1"
+    "koa-bodyparser": "^4.3.0",
+    "koa-router": "^10.1.1",
+    "request-promise": "^4.2.6"
   }
 }

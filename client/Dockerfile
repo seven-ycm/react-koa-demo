@@ -1,7 +1,6 @@
 FROM nginx:latest
 
-RUN npm install && npm run build
-RUN mkdir /dist
+RUN mkdir /html
 COPY ./dist /html
 COPY ./nginx.conf.template /
 

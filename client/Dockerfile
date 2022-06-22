@@ -1,11 +1,5 @@
-FROM nginx:latest
+FROM nginx
 
-RUN mkdir /html
-COPY ./dist /html
-COPY ./nginx.conf.template /
+COPY ./dist /usr/share/nginx/html
 
-ENV BACKEND_URL=""
-
-CMD envsubst '$BACKEND_URL' < /nginx.conf.template > /etc/nginx/nginx.conf \
- && cat /etc/nginx/nginx.conf \
- && nginx -g 'daemon off;'
+EXPOSE 80

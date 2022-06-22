@@ -23,8 +23,9 @@ http {
         server_name  localhost;
 
         location / {
-            root   /html;
+            root   /usr/share/nginx/html;
             index  index.html;
+            try_files $uri $uri/ /index.html;
         }
 
   location /backend/ {

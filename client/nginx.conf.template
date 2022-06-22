@@ -23,7 +23,7 @@ http {
         server_name  localhost;
 
         location / {
-            root   /dist;
+            root   /html;
             index  index.html;
         }
 

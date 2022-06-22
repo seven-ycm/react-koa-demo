@@ -2,7 +2,8 @@
  * 错误码
  */
 export enum ERROR_CODE {
-    SUCCESS, // 成功状态码
+    SUCCESS = 'success', // 成功状态码
+    FAILED = 'failed', // 失败状态码
 }
 
 export enum HTTP_CODE {

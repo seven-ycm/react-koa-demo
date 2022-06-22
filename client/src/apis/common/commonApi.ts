@@ -5,7 +5,7 @@ const api = {
     getOwnersApi: '/api/ownerList',
 }
 
-export function getOwners(data: IGetOwnersReq) {
+export function getOwners(data?: IGetOwnersReq) {
     return request({
         url: api.getOwnersApi,
         method: 'post',

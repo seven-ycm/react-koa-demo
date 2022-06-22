@@ -6,7 +6,7 @@ const config: any = {
     local: { // 本地
         ...commonConf,
         domain: "https://localhost:3000",
-        apiHost: "http://localhost:18090/",
+        apiHost: "",
         portalHost: "",
         homePath: "/ownerList",
     },
